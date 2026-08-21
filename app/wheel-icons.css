@@ -1,0 +1,63 @@
+/* Transparent PNG product icons positioned cleanly inside each wheel segment. */
+.spin-shell .label {
+  padding-top: 2.5%;
+  overflow: visible;
+}
+
+.spin-shell .label span {
+  width: 82px;
+  gap: 0;
+}
+
+.gift-png {
+  display: block;
+  background-image: url("/assets/gift-icons-sprite.png");
+  background-repeat: no-repeat;
+  background-size: 500% 200%;
+  filter: drop-shadow(0 4px 4px rgba(0,0,0,.72));
+}
+
+.spin-shell .label .gift-png {
+  flex: 0 0 auto;
+  width: 54px;
+  height: 68px;
+}
+
+.spin-shell .label em {
+  display: grid;
+  place-items: center;
+  min-height: 18px;
+  max-width: 78px;
+  margin-top: -3px;
+  font-size: clamp(7px, 1.85vw, 9px);
+  line-height: 1.02;
+  text-align: center;
+  text-wrap: balance;
+  letter-spacing: .15px;
+}
+
+.gift-0 { background-position: 0% 0%; }
+.gift-1 { background-position: 25% 0%; }
+.gift-2 { background-position: 50% 0%; }
+.gift-3 { background-position: 75% 0%; }
+.gift-4 { background-position: 100% 0%; }
+.gift-5 { background-position: 0% 100%; }
+.gift-6 { background-position: 25% 100%; }
+.gift-7 { background-position: 50% 100%; }
+.gift-8 { background-position: 75% 100%; }
+.gift-9 { background-position: 100% 100%; }
+
+.win-card .prize-icon.gift-png {
+  width: 112px;
+  height: 140px;
+  border-radius: 18px;
+  background-color: #fff8df;
+  filter: drop-shadow(0 10px 12px rgba(116,34,10,.25));
+}
+
+@media (max-width: 390px) {
+  .spin-shell .label { padding-top: 2%; }
+  .spin-shell .label span { width: 70px; }
+  .spin-shell .label .gift-png { width: 47px; height: 59px; }
+  .spin-shell .label em { max-width: 67px; min-height: 16px; margin-top: -2px; font-size: 6.8px; }
+}
